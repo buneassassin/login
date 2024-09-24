@@ -3,7 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_horizontal2"
@@ -27,7 +28,6 @@
         app:layout_constraintGuide_percent="0.3" />
 
     <!-- Lottie animation -->
-
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="122dp"
         android:layout_height="226dp"
@@ -41,17 +41,14 @@
         app:lottie_rawRes="@raw/anim1"
         tools:ignore="MissingConstraints" />
 
-
     <EditText
         android:id="@+id/editTextUser"
         android:layout_width="286dp"
         android:layout_height="49dp"
         android:layout_marginTop="144dp"
         android:hint="@string/app_name"
-        android:inputType="Nombre"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-
         app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
         app:layout_constraintTop_toTopOf="@+id/guideline_horizontal1"
         app:layout_constraintWidth_percent="0.8" />
@@ -64,11 +61,8 @@
         android:hint="@string/contrase_a"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
-
-        app:layout_constraintTop_toBottomOf="@+id/editTextUser"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextUser" />
 
     <Button
         android:id="@+id/buttonLogin"
@@ -76,24 +70,22 @@
         android:layout_height="51dp"
         android:layout_marginTop="56dp"
         android:text="@string/iniciar_sesi_n"
-        app:layout_constraint="@+id/guideline_horizontal2"
         app:layout_constraintBottom_toTopOf="@+id/guideline_horizontal2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline_vertical"
         app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
-        app:layout_constraintVertical_bias="0.04"
-        app:layout_constraintWidth_percent="0.8" />
+        app:layout_constraintVertical_bias="0.04" />
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="111dp"
+        android:layout_height="108dp"
         android:scaleType="fitXY"
         android:src="@drawable/wave_vector"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.6"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline_horizontal2"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="0dp" />
-
+        app:layout_constraintVertical_bias="1.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
